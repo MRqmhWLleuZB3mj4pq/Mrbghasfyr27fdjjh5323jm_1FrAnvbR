@@ -65,7 +65,7 @@ local esp = {
     tracer = {false, Color3.new(1, 1, 1)};
     skeleton = {false, Color3.new(1, 1, 1)};
     outline = {false, Color3.new(0, 0, 0)};
-    frameInterval = 5; -- Check every 5 frames for optimizations.
+    frameInterval = 3; -- Check every 5 frames for optimizations.
     currentFrame = 0;  -- Frame counter to throttle updates.
 };
 
