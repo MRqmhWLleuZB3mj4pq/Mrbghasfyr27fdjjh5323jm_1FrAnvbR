@@ -212,7 +212,7 @@ function esp:init()
 
     table.insert(connections, players.PlayerAdded:Connect(esp.new));
     table.insert(connections, players.PlayerRemoving:Connect(esp.remove));
-    table.insert(connections, game:GetService('RunService').RenderStepped:Connect(function()
+    table.insert(connections, game:GetService("RunService").Heartbeat:Connect(function()
         esp.currentFrame += 1;
 
         -- Process only if the frame count matches the interval
